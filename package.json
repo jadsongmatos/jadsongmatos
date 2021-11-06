@@ -1,7 +1,7 @@
 {
-  "name": "nextjs",
-  "version": "1.0.0",
-  "private": true,
+  "name": "jadson-g-matos",
+  "version": "3.0.0",
+  "private": false,
   "scripts": {
     "dev": "next dev",
     "build": "next build",
@@ -9,12 +9,14 @@
     "lint": "next lint"
   },
   "dependencies": {
-    "next": "12.0.1",
-    "react": "17.0.2",
-    "react-dom": "17.0.2"
+    "bootstrap": "^5.1.3",
+    "next": "^12.0.3",
+    "react": "^17.0.2",
+    "react-bootstrap": "^2.0.2",
+    "react-dom": "^17.0.2"
   },
   "devDependencies": {
-    "eslint": "7.32.0",
-    "eslint-config-next": "11.1.0"
+    "eslint": "^7.23.0",
+    "eslint-config-next": "^12.0.3"
   }
 }

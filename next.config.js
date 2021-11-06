@@ -1,3 +1,6 @@
 module.exports = {
-  reactStrictMode: true,
-}
+  reactStrictMode: false,
+  images: {
+    domains: ["github-readme-stats.vercel.app"],
+  },
+};

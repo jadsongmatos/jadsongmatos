@@ -1,0 +1,20 @@
+@media print {
+  .main-print {
+    margin-top: 0 !important;
+    padding-top: 0 !important;
+  }
+}
+
+.artstation {
+  height: 250vh;
+}
+
+.profile-badge{
+  width: 100% !important;
+}
+
+@media (min-width: 768px) {
+  .artstation {
+    height: 150vh;
+  }
+}
