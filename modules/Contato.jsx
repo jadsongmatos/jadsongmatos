@@ -6,6 +6,7 @@ export default function Contato() {
     tel: "51 99818-9117",
     email: "jadson.g-matos@outlook.com",
     name: "Jadson Goulart de Matos",
+    qr: "https://api.qrserver.com/v1/create-qr-code/?color=000000&bgcolor=FFFFFF&data=BEGIN%3AVCARD%0AVERSION%3A2.1%0AFN%3AJadson+Goulart+de++Matos%0AN%3AGoulart+de++Matos%3BJadson%0ATEL%3BHOME%3BVOICE%3A(51)+93505-1715%0AEMAIL%3BHOME%3BINTERNET%3Ajadson.g-matos%40outlook.com%0AURL%3Ahttps%3A%2F%2Fjadson-g-matos.vercel.app%2F%0AADR%3A%3B%3BAvenida+Jos%C3%A9+Am%C3%A2ncio+da+rosa+1165+-+Vila+S%C3%A3o+Jo%C3%A3o%3BTorres%3B%3B95560000%3BBrasil%0AEND%3AVCARD%0A&qzone=0&margin=0&size=1000x1000&ecc=L",
     map: {
       link: "https://goo.gl/maps/bKEognZdazbGPyes7",
       img: "https://maps.google.com/maps?q=Vila%20S%C3%A3o%20Jo%C3%A3o%20Torres,%20RS,%2095560-000&t=&z=13&ie=UTF8&iwloc=&output=embed",
@@ -89,11 +90,11 @@ export default function Contato() {
           ></iframe>
           <div className="align-self-center">
             <Image
-              src="/qr.png"
-              alt="qr code"
               layout="fixed"
-              width="171"
-              height="171"
+              width="150px"
+              height="150px"
+              src={contato.qr}
+              alt="qr code"
             />
           </div>
         </div>
