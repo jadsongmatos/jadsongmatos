@@ -5,16 +5,29 @@
   }
 }
 
-.artstation {
-  height: 250vh;
+.pdf {
+  height: 2300px !important;
 }
 
-.profile-badge{
+.map {
+  height: 50vh !important;
+}
+
+.artstation {
+  height: calc(2450px - 80vmax) !important;
+}
+
+.artstation-bkg {
+  background-color: #222 !important;
+}
+
+.profile-badge {
   width: 100% !important;
 }
-
-@media (min-width: 768px) {
+/*
+@media (min-width: 765px) {
   .artstation {
     height: 150vh;
   }
 }
+*/

@@ -8,7 +8,7 @@ export default function Contato() {
     name: "Jadson Goulart de Matos",
     map: {
       link: "https://goo.gl/maps/bKEognZdazbGPyes7",
-      img: "https://www.openstreetmap.org/export/embed.html?bbox=-49.8621,-29.2702,-49.6877,-29.3517&amp;layer=mapquest&amp",
+      img: "https://maps.google.com/maps?q=Vila%20S%C3%A3o%20Jo%C3%A3o%20Torres,%20RS,%2095560-000&t=&z=13&ie=UTF8&iwloc=&output=embed",
     },
   };
 
@@ -80,21 +80,22 @@ export default function Contato() {
         <div className="d-flex justify-content-center flex-column col-md-5 mx-auto">
           <iframe
             src={contato.map.img}
+            className="w-100 mb-3 map"
             frameborder="0"
-            className="img-fluid w-100 mb-3"
-            height="250px"
+            scrolling="no"
+            marginheight="0"
+            marginwidth="0"
+            loading="lazy"
           ></iframe>
-          <div className="d-flex">
-          <Image
-            src="/qr.png"
-            alt="qr code"
-            layout="fixed"
-            width="171"
-            height="171"
-            className="rounded mx-auto d-block"
-          />
+          <div className="align-self-center">
+            <Image
+              src="/qr.png"
+              alt="qr code"
+              layout="fixed"
+              width="171"
+              height="171"
+            />
           </div>
-          
         </div>
       </div>
     </section>

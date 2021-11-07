@@ -4,10 +4,9 @@ import Contato from "../modules/Contato";
 import Habilidades from "../modules/Habilidades";
 import Header from "../modules/Header";
 
-
 export default function Home() {
   return (
-    <div>
+    <>
       <Head>
         <meta name="description" content="portfolio jadson g matos" />
         <link rel="icon" href="/favicon.ico" />
@@ -34,23 +33,26 @@ export default function Home() {
         <div className="row mb-5 justify-content-between">
           <Contato />
           <Habilidades />
+          <iframe id="formacao" className="pdf col-12" src="/Profile.pdf"></iframe>
         </div>
       </main>
-      <iframe
-        className="my-5 shadow-lg w-100 artstation"
-        id="artes"
-        src="https://jadsonmatos.artstation.com/"
-      ></iframe>
-      <footer className="container py-3 text-muted">
-        <p>Obrigador pelo seu tempo 🙂</p>
-      </footer>
-      
+      <div className="artstation-bkg">
+        <iframe
+          className="mt-5 shadow-lg artstation p-0"
+          id="artes"
+          src="https://jadsonmatos.artstation.com/"
+          frameborder="0"
+          height="100%"
+          width="100%"
+        ></iframe>
+      </div>
+
       <Script
-    src="https://platform.linkedin.com/badges/js/profile.js"
-    async
-    defer
-    type="text/javascript"
-  />
-    </div>
+        src="https://platform.linkedin.com/badges/js/profile.js"
+        async
+        defer
+        type="text/javascript"
+      />
+    </>
   );
 }

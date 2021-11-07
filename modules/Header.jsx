@@ -1,29 +1,35 @@
 import { useState } from "react";
-import Navbar from "react-bootstrap/Navbar";
+import { Navbar, Container, Nav } from "react-bootstrap";
 
 export default function Header() {
   let [header, setHeader] = useState([
     {
       title: "Contato",
-      link: "contato",
+      link: "#contato",
     },
     {
       title: "Habilidades",
-      link: "projetos",
+      link: "#projetos",
     },
     {
-      title: "Formação/Experiência",
-      link: "/Profile.pdf",
+      title: "Formação & Experiência",
+      link: "#formacao",
     },
     {
       title: "Artes",
-      link: "artes",
+      link: "#artes",
     },
   ]);
 
   return (
     <header className="border-bottom shadow fixed-top bg-white d-print-none">
-      <nav className="navbar container navbar-expand-sm navbar-light">
+      <Navbar
+        collapseOnSelect
+        bg="white"
+        expand="md"
+        variant="white"
+        className="container navbar-expand-sm "
+      >
         <div className="container-fluid align-items-center">
           <a className="navbar-brand" href="#share">
             <img
@@ -37,35 +43,25 @@ export default function Header() {
               onclick="shareNavigator()"
             />
           </a>
-          <button
-            className="navbar-toggler"
-            type="button"
-            data-bs-toggle="collapse"
-            data-bs-target="#navbarScroll"
-            aria-controls="navbarScroll"
-            aria-expanded="false"
-            aria-label="Toggle navigation"
-          >
-            <span className="navbar-toggler-icon"></span>
-          </button>
-          <div
-            className="collapse navbar-collapse justify-content-center"
-            id="navbarScroll"
+          <Navbar.Toggle aria-controls="responsive-navbar-nav" />
+          <Navbar.Collapse
+            className="justify-content-center"
+            id="responsive-navbar-nav"
           >
             <ul className="navbar-nav">
               {header.map((e) => {
                 return (
                   <li className="nav-item">
-                    <a href={"#" + e.link} className="nav-link px-2 link-dark">
+                    <a href={e.link} className="nav-link px-2 link-dark">
                       {e.title}
                     </a>
                   </li>
                 );
               })}
             </ul>
-          </div>
+          </Navbar.Collapse>
         </div>
-      </nav>
+      </Navbar>
     </header>
   );
 }
