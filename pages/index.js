@@ -10,8 +10,8 @@ export default function Home() {
       <Head>
         <meta name="description" content="portfolio jadson g matos" />
         <link rel="icon" href="/favicon.ico" />
-        <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
-        <meta content="IE=edge" http-equiv="X-UA-Compatible" />
+        <meta httpEquiv="Content-Type" content="text/html; charset=UTF-8" />
+        <meta content="IE=edge" httpEquiv="X-UA-Compatible" />
         <meta content="width=device-width, initial-scale=1.0" name="viewport" />
         <meta name="description" content="portfolio" />
         <meta property="og:url" content="https://jadson-g-matos.vercel.app/" />
@@ -41,7 +41,7 @@ export default function Home() {
           className="mt-5 shadow-lg artstation p-0"
           id="artes"
           src="https://jadsonmatos.artstation.com/"
-          frameborder="0"
+          frameBorder="0"
           height="100%"
           width="100%"
         ></iframe>
