@@ -22,12 +22,12 @@ export default function Header() {
   ]);
 
   return (
-    <header className="border-bottom shadow fixed-top bg-white d-print-none">
+    <header className="border-bottom shadow fixed-top d-print-none bg-dark">
       <Navbar
         collapseOnSelect
-        bg="white"
+        bg="dark"
         expand="md"
-        variant="white"
+        variant="dark"
         className="container navbar-expand-sm "
       >
         <div className="container-fluid align-items-center">
