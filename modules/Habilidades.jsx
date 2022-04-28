@@ -7,19 +7,19 @@ export default function Habilidades() {
       { title: "Gerador adesivos", link: "https://qr-card.vercel.app/" },
       {
         title: "Conversor de texto pra imagens",
-        link: "https://slender1808.github.io/text-to-img/",
+        link: "https://jadsongmatos.github.io/text-to-img/",
       },
       {
         title: "Geração de QR code com imagens",
-        link: "https://github.com/Slender1808/QR-code-Art",
+        link: "https://github.com/jadsongmatos/QR-code-Art",
       },
       {
         title: "QR code estilizador",
-        link: "https://github.com/Slender1808/QR-code-Art",
+        link: "https://github.com/jadsongmatos/QR-code-Art",
       },
       {
         title: "Mesclar duas imagens",
-        link: "https://github.com/Slender1808/2-imagem-to-1-imagem",
+        link: "https://github.com/jadsongmatos/2-imagem-to-1-imagem",
       },
     ],
     web: [
@@ -37,7 +37,7 @@ export default function Habilidades() {
       },
       {
         title: "Micro seridor arquivos",
-        link: "https://github.com/Slender1808/upload-file",
+        link: "https://github.com/jadsongmatos/upload-file",
       },
     ],
   };
@@ -50,7 +50,7 @@ export default function Habilidades() {
       <section className="row d-flex align-items-center" id="projetos">
         <a
           className="col-md-7 text-decoration-none link-dark align-items-center row"
-          href="https://github.com/Slender1808"
+          href="https://github.com/jadsongmatos"
         >
           <svg className="col-2" viewBox="0 0 11.49 11.21">
             <path
@@ -68,7 +68,7 @@ export default function Habilidades() {
             layout="responsive"
             width="350"
             height="215"
-            src="https://github-readme-stats.vercel.app/api/top-langs/?username=slender1808&layout=compact&langs_count=16&theme=default"
+            src="https://github-readme-stats.vercel.app/api/top-langs/?username=jadsongmatos&layout=compact&langs_count=16&theme=default"
             className="img-fluid w-100 h-100"
           />
         </div>
