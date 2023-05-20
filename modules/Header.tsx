@@ -1,26 +1,9 @@
-import { useState } from "react";
-import { Navbar, Container, Nav } from "react-bootstrap";
+import { Navbar } from "react-bootstrap";
+import Link from "next/link";
+import Image from "next/image";
 
-export default function Header() {
-  let [header, setHeader] = useState([
-    {
-      title: "Contato",
-      link: "#contato",
-    },
-    {
-      title: "Habilidades",
-      link: "#projetos",
-    },
-    {
-      title: "Formação & Experiência",
-      link: "#formacao",
-    },
-    {
-      title: "Artes",
-      link: "#artes",
-    },
-  ]);
-
+export default function Header({ header }: { header: any }) {
+  //TODO: shareNavigator
   return (
     <header className="border-bottom shadow fixed-top d-print-none bg-dark">
       <Navbar
@@ -31,30 +14,30 @@ export default function Header() {
         className="container navbar-expand-sm "
       >
         <div className="container-fluid align-items-center">
-          <a className="navbar-brand" href="#share">
-            <img
+          <Link
+            className="navbar-brand"
+            href="#share"
+          >
+            <Image
               loading="lazy"
-              type="image/ico"
               src="/favicon.ico"
               alt="jadson"
               width="32"
               height="32"
-              type="button"
-              onclick="shareNavigator()"
             />
-          </a>
+          </Link>
           <Navbar.Toggle aria-controls="responsive-navbar-nav" />
           <Navbar.Collapse
             className="justify-content-center"
             id="responsive-navbar-nav"
           >
             <ul className="navbar-nav">
-              {header.map((e) => {
+              {header.map((e: any) => {
                 return (
                   <li className="nav-item">
-                    <a href={e.link} className="nav-link px-2 link-dark">
+                    <Link href={e.link} className="nav-link px-2 link-dark">
                       {e.title}
-                    </a>
+                    </Link>
                   </li>
                 );
               })}

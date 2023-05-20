@@ -1,46 +1,7 @@
 import Image from "next/image";
 import Link from "next/link";
 
-export default function Habilidades() {
-  const habilidades = {
-    images: [
-      { title: "Gerador adesivos", link: "https://qr-card.vercel.app/" },
-      {
-        title: "Conversor de texto pra imagens",
-        link: "https://jadsongmatos.github.io/text-to-img/",
-      },
-      {
-        title: "Geração de QR code com imagens",
-        link: "https://github.com/jadsongmatos/QR-code-Art",
-      },
-      {
-        title: "QR code estilizador",
-        link: "https://github.com/jadsongmatos/QR-code-Art",
-      },
-      {
-        title: "Mesclar duas imagens",
-        link: "https://github.com/jadsongmatos/2-imagem-to-1-imagem",
-      },
-    ],
-    web: [
-      {
-        title: "Background ajustavel ao tempo",
-        link: "https://background-time-lapse.vercel.app/",
-      },
-      {
-        title: "Banco de dados xadrez",
-        link: "https://oracle-chess.vercel.app/",
-      },
-      {
-        title: "Api compressão de arquivos",
-        link: "https://api-zip.vercel.app/",
-      },
-      {
-        title: "Micro seridor arquivos",
-        link: "https://github.com/jadsongmatos/upload-file",
-      },
-    ],
-  };
+export default function Habilidades({ habilidades }: { habilidades: any }) {
   return (
     <section
       className="col-12 shadow rounded-3 my-3 p-5 align-items-center d-print-block"
@@ -65,7 +26,7 @@ export default function Habilidades() {
         </a>
         <div className="col-md-5 p-auto py-3">
           <Image
-            layout="responsive"
+            alt="Most Used Languages"
             width="350"
             height="215"
             src="https://github-readme-stats.vercel.app/api/top-langs/?username=jadsongmatos&layout=compact&langs_count=16&theme=default"
@@ -77,7 +38,7 @@ export default function Habilidades() {
           <div className="col-md-6">
             <h5 className="fw-bold mb-3">Processamento de Imagens</h5>
             <ul className="list-group list-group-flush">
-              {habilidades.images.map((habilidade, index) => {
+              {habilidades.images.map((habilidade: any, index: number) => {
                 return (
                   <Link href={habilidade.link}>
                     <a className="list-group-item">
@@ -92,7 +53,7 @@ export default function Habilidades() {
           <div className="col-md-6">
             <h5 className="fw-bold mb-3">Web</h5>
             <ul className="list-group list-group-flush">
-              {habilidades.web.map((habilidade, index) => {
+              {habilidades.web.map((habilidade: any, index: number) => {
                 return (
                   <Link href={habilidade.link}>
                     <a className="list-group-item">
