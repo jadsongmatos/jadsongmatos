@@ -4,6 +4,7 @@ const nextConfig = {
   trailingSlash: true,
   output: "export",
   distDir: 'docs',
+  basePath: "/jadsongmatos",
   images: {
     unoptimized: true,
   },
