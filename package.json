@@ -1,27 +1,29 @@
 {
-  "name": "jadson-g-matos",
-  "version": "3.0.1",
-  "private": false,
+  "name": "jadsongmatos-v2",
+  "version": "0.2.0",
+  "private": true,
   "scripts": {
     "dev": "next dev",
     "build": "next build",
     "start": "next start",
-    "lint": "next lint",
-    "deploy": "next build && touch out/.nojekyll && git add out/ && git commit -m \"Deploy\" && git subtree push --prefix out origin gh-pages"
+    "lint": "next lint"
   },
   "dependencies": {
-    "@types/node": "^20.2.1",
-    "@types/react": "^18.2.6",
-    "@types/react-dom": "^18.2.4",
-    "bootstrap": "^5.2.3",
-    "next": "^13.4.3",
-    "react": "^18.2.0",
-    "react-bootstrap": "^2.7.4",
-    "react-dom": "^18.2.0",
-    "typescript": "^5.0.4"
-  },
-  "devDependencies": {
-    "eslint": "7.32.0",
-    "eslint-config-next": "11.1.0"
+    "@types/node": "20.4.1",
+    "@types/react": "18.2.14",
+    "@types/react-dom": "18.2.6",
+    "bootstrap": "^5.3.0",
+    "eslint": "8.44.0",
+    "eslint-config-next": "13.4.9",
+    "i18next": "^23.2.8",
+    "next": "13.4.9",
+    "next-i18next": "^14.0.0",
+    "next-language-detector": "^1.0.2",
+    "react": "18.2.0",
+    "react-bootstrap": "^2.8.0",
+    "react-dom": "18.2.0",
+    "react-i18next": "^13.0.1",
+    "react-icons": "^4.10.1",
+    "typescript": "5.1.6"
   }
 }

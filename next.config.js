@@ -1,14 +1,10 @@
-// @ts-check
-
-/**
- * @type {import('next').NextConfig}
- **/
+/** @type {import('next').NextConfig} */
 const nextConfig = {
-  output: 'export',
-  basePath: '/gh-pages-test',
-  reactStrictMode: false,
+  reactStrictMode: true,
+  trailingSlash: true,
+  output: "export",
   images: {
-    domains: ["github-readme-stats.vercel.app", "api.qrserver.com"],
+    unoptimized: true,
   },
 }
 
