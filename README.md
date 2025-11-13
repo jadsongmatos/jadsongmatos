@@ -31,7 +31,6 @@ Sou um desenvolvedor de software com histórico em design gráfico, manutenção
 <p align="left">
   <a href="https://www.python.org/"><img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/python/python-original.svg" alt="Python" width="30"/></a>
   <a href="https://www.cplusplus.com/"><img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/cplusplus/cplusplus-original.svg" alt="C++" width="30"/></a>
-  <a href="https://www.rust-lang.org/"><img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/rust/rust-plain.svg" alt="Rust" width="30"/></a>
   <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript"><img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/javascript/javascript-original.svg" alt="JavaScript" width="30"/></a>
   <a href="https://reactjs.org/"><img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/react/react-original.svg" alt="React" width="30"/></a>
   <a href="https://nextjs.org/"><img src="https://cdn.worldvectorlogo.com/logos/nextjs-2.svg" alt="Next.js" width="30"/></a>
@@ -49,26 +48,12 @@ Sou um desenvolvedor de software com histórico em design gráfico, manutenção
 ## Métricas do GitHub
 
 <div style="display: flex; justify-content: center; flex-wrap: wrap; gap: 2rem;">
-
-  <div style="text-align: center;">
-    <img 
-      src="https://github-readme-streak-stats.herokuapp.com/?user=jadsongmatos&" 
-      alt="GitHub Streak"
-    />
-    <p><strong>GitHub Streak</strong><br>
-      Acompanhe minha disciplina: cada dia em que contribuo conta para esta sequência, refletindo meu compromisso contínuo com desenvolvimento e aprendizagem diária.
-</p>
-  </div>
-
   <div style="text-align: center; width: 40%">
     <img 
       src="https://github-readme-stats.vercel.app/api/top-langs/?username=jadsongmatos&layout=compact&langs_count=16&theme=default" 
       alt="Top Languages"
       width="auto"
     />
-    <p><strong>Principais Linguagens</strong><br>
-Este gráfico mostra a distribuição das linguagens que uso com mais frequência, destacando minhas especialidades e áreas de atuação nos projetos.
-</p>
   </div>
   <div style="text-align: center; width: 50%">
     <img 
@@ -76,9 +61,6 @@ Este gráfico mostra a distribuição das linguagens que uso com mais frequênci
       alt="GitHub Stats" 
       width="auto"
     />
-    <p><strong>Visão Geral de Atividade</strong><br>
-     Aqui você vê um resumo de commits, pull requests e issues abertos, oferecendo uma panorâmica da minha produtividade e colaboração em código ao longo do tempo.
-</p>
   </div>
 </div>
 
